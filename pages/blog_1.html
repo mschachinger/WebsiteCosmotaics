@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link href="../src/output.css" rel="stylesheet">
+      <link rel="icon" type="image/png" href="../src/img/Cosmo_Logo_v1.svg">
+      <script type="module" src="pages.js"></script>
+
+      <!-- Space Grotesk -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+      <!-- Raleway -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+
+      <!-- GSAP -->
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+
+  </head>
+  <body>
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full bg-blue z-40">
+    <div class="mx-auto max-w-8xl px-2 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <a href="#home" class="p-4"><img src="../src/img/Cosmo_Logo_v1.svg" class="w-8"></a>
+
+        <!-- Navigation items (Desktop) -->
+        <div class="hidden sm:flex sm:space-x-4">
+          <a href="#video" class="rounded-md bg-blue-600 px-3 py-2 text-sm font-medium text-white">Dashboard</a>
+          <a href="#team" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-blue-700 hover:text-white">The Idea</a>
+          <a href="#idea" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-blue-700 hover:text-white">The Team</a>
+          <a href="#contact" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-blue-700 hover:text-white">Contact</a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <div class="sm:hidden mr-6">
+          <button id="menu-button" type="button"
+            class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+
+            <!-- Opened Menu SVG -->
+            <svg id="menu-open-icon" class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <!-- Close Menu SVG -->
+            <svg id="menu-close-icon" class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="hidden sm:hidden bg-blue w-full" id="mobile-menu">
+      <div class="space-y-1 px-2 pb-3 pt-2">
+        <a href="#video" class="block rounded-md px-3 py-2 text-base font-medium text-white">Dashboard</a>
+        <a href="#team" class="block rounded-md px-3 py-2 text-base font-medium text-white">The Idea</a>
+        <a href="#idea" class="block rounded-md px-3 py-2 text-base font-medium text-white">The Team</a>
+        <a href="#contact" class="block rounded-md px-3 py-2 text-base font-medium text-white">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+
+
+    <!-- The Idea -->
+    <section id="" class="scroll-mt-16 mt-16">      
+
+      <div class="bg-blue-500 w-full h-full">
+        <div class="px-14 lg:px-64 text-white">
+          <h1 class="text-6xl font-bold space-grotesk pt-5 pb-5 text-white">Shaping the future of Solar Farms</h1>
+          <p class="pb-5 text-lg">Es ist schon längst an der Zeit, über die jüngsten Entwicklungen in meinem Unternehmen zu berichten. Cosmotaics steht kurz vor einem bedeutenden Meilenstein. Leider kann ich persönlich nicht anwesend sein, wenn <a href="https://de.wikipedia.org/wiki/Leonore_Gewessler" class="underline">Leonore Gewessler</a>, Bundesministerin für Klimaschutz, Umwelt, Energie, Mobilität, Innovation und Technologie uns besucht. Es gibt aber noch weitere aufregende Neuigkeiten die nicht vorenthalten will.</p>
+          <img src="../src/img/blog_thumbnail_1.avif" alt="solar" class="pb-6 w-full">
+
+          <!-- Smaller Heading-->
+          <p class="font-semibold text-3xl pb-1">Prototypenfertigstellung und bevorstehender Besuch</p>
+          <!-- Text -->
+          <p class="pb-5 text-lg">Wir konnten noch in kürzester Zeit einen ersten Prototyp entwickeln, denn Dienstag kommt der hohe Besuch in den <a href="https://accent.at/" class="underline">Makerspace accent</a>. Wir sind fest entschlossen, der Bundesministerin einen detaillierten Einblick in unsere bahnbrechende Solartechnologie zu geben. Aus Gründen der Vertraulichkeit können wir derzeit keine detaillierten Informationen teilen. Wir bitten um Ihr Verständnis. Obwohl ich nicht persönlich anwesend sein kann, bin ich zuversichtlich, dass Helmut, Efecan und Gregor die bevorstehende Begegnung mit der hochrangigen Regierungsvertreterin souverän meistern werden.</p>
+
+
+          <p class="font-semibold text-3xl pb-1">Innovationen vorantreiben</p>
+
+          <p class="pb-10 text-lg">Parallel zu den Vorbereitungen für den bevorstehenden Besuch arbeite ich persönlich an der weiteren Entwicklung von Cosmotaics. Ich bin einen Monat lang am <a href="https://isra.sn/" class="underline">Institut Sénégalais de Recherches Agricoles in Senegal.</a> Das Institut stellt mir ihre Flächen zur Verfügung um einen weiteren Prototyp zu bauen und die Anwendung unserer Technologie in trockenen Regionen zu testen. Diese Erfahrungen sind von unschätzbarem Wert, um unser Wissen über die Wassergewinnung aus der Luft zu erweitern und den globalen Wassersektor nachhaltig zu transformieren.
+          </p>
+        </div>
+
+    
+
+
+      </div>
+    </section>
+
+  <!-- Footer -->
+    <footer class="relative bg-blue h-16 text-white flex justify-center items-center overflow-hidden">
+      <div class="absolute inset-0 bg-footer filter "></div>
+      <p class="relative z-10">© 2024 Cosmotaics</p>
+    </footer>
+  </body>
+</html>
+
+<style>
+/* Fonts */
+.space-grotesk {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.railway {
+  font-family: 'Raleway', sans-serif;
+}
+</style>
