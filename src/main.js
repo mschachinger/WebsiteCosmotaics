@@ -16,6 +16,8 @@ createApp({
             console.log("Email:", this.email);
             console.log("Message:", this.message);
 
+
+            //Speichert die Daten in ein Formdata Objekt
             const formdata = {
                 name: this.name,
                 email: this.email,
@@ -58,23 +60,30 @@ createApp({
     }
 }).mount("#app");
 
+/**
+ * GSAP Animations
+ */
+
 function applyHoverEffect(selector) {
     document.querySelectorAll(selector).forEach(card => {
       let hover = gsap.fromTo(card, { scale: 1 }, { paused: true, scale: 1.02, duration: 0.2, ease: "power2.inOut" });
   
       card.addEventListener("mouseenter", () => hover.play());
-      card.addEventListener("mouseleave", () => hover.reverse());
+      card.addEventListener("mouseleave", () => hover.reverse()); 
     });
   }
   
   applyHoverEffect(".team_card");
   applyHoverEffect(".news_card");
 
-
- document.addEventListener("DOMContentLoaded", (event) => {
+  document.addEventListener("DOMContentLoaded", (event) => {
     gsap.fromTo(".arrow_image", { opacity: 0 }, { opacity: 1, duration: 2, delay: 5, ease: "ease-in" });
 
    });
+
+/** 
+ * Mobile-Menubar
+ */
 
    document.addEventListener("DOMContentLoaded", function () {
     const menuButton = document.getElementById("menu-button");

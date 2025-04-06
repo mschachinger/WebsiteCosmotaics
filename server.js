@@ -42,14 +42,13 @@ app.post('/submitForm', async (req, res) => {
     };
 
     try {
-        // E-Mail senden
+        // sending E-Mail
         await transporter.sendMail(mailOptions);
-        console.log('Email sent');
         res.json({ success: true, error: "Email gesendet" });
     } catch (error) {
-        console.log('Error sending email:', error);
         res.json({ success: false, error: "Error sending email" });
     }
+
 });
 
 // Server starten

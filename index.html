@@ -26,8 +26,7 @@
       <!-- Vue-->
       <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   </head>
-  <body>
-
+  <body class="bg-gray">
   <!-- Navigation -->
   <nav class="fixed top-0 w-full bg-blue z-40">
     <div class="mx-auto max-w-8xl px-2 sm:px-6 lg:px-8">
@@ -79,7 +78,7 @@
     <!-- Video Section-->
     <section id="video" class="mt-16">
       <div class="relative">
-        <video muted autoplay loop src="src/img/test.mp4" class="w-full"></video>
+        <video muted autoplay loop src="src/img/video_temp.mp4" class="w-full"></video>
         <!-- Arrow which appears after a while -->
         <a href="#idea"><img id="scroll-arrow" src="src/img/Cosmo_pfeil_blau.png" 
         class="rotate-90 absolute left-20 arrow_image" style="bottom: 12%; width: 4%"></a>
@@ -87,7 +86,7 @@
     </section>
 
     <!-- The Idea -->
-    <section id="idea" class="scroll-mt-16">      
+    <section id="idea" class="scroll-mt-16 pb-32">      
 
       <div class="bg-gray w-full h-full">
         <h1 class="text-3xl md:text-6xl font-bold space-grotesk pl-12 pt-16 pb-8">Shaping the future of Solar Farms</h1>
@@ -133,7 +132,7 @@
         </div>
 
         <div class="flex items-center justify-center w-auto h-16 mx-12 mt-6 bg-blue text-white">
-          <p class="text-xl font-bold">LESS SOILING > > > MORE ENERGY</p>
+          <p class="text-xl font-bold">LESS SOILING  > > >  MORE ENERGY</p>
         </div>
 
 
@@ -143,7 +142,7 @@
           <!-- Section 1 -->
           <div class="grid grid-cols-12 items-center gap-x-10 my-20 mx-15">
             <img src="src/img/graphic1.png" class="col-span-8 img-shadow-xl" alt="Graphic that explains soiling 1">
-            <p class="col-span-4 railway text-[2.0vw]">
+            <p class="col-span-4 railway text-[2.0vw] ml-8">
               <b>Moving out.</b> At dusk the Panel moves out to protect the Solar Panel. Lorem ipsum dolor sit amet, consetetur. 
               At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est 
               Lorem ipsum dolor sit amet.
@@ -171,13 +170,12 @@
           </div>
         </div>
         
-
       </div>
     </section>
 
     <!-- Team Section -->
     <section id="team" class="scroll-mt-16">
-      <div class="bg-gray w-full pt-32">
+      <div class="bg-gray w-full">
         <!-- Heading Text-->
         <div class="pt-6 pl-10">
           <h1 class="font-bold text-3xl md:text-6xl space-grotesk">Team</h1>
@@ -206,7 +204,7 @@
             </div>
 
             <!-- Card -->
-            <div class="shrink-0 flex-col bg-light-blue p-6 m-6 rounded-md team_card">
+            <div class="shrink-0 flex-col bg-light-blue p-6 m-6 team_card">
               <div class="text-white">
                 <img src="https://dummyimage.com/300x400" alt="Team Member" class="pb-5">
                 <p class="text-2xl">Name</p>
@@ -215,9 +213,9 @@
             </div>
 
             <!-- Card -->
-            <div class="shrink-0 flex-col bg-light-blue p-6 m-6 rounded-md team_card">
-              <div class="text-white">
-                <img src="https://dummyimage.com/300x400" alt="Team Member" class="pb-5">
+            <div class="shrink-0 flex-col p-6 m-6 rounded-md team_card">
+              <div class="text-black">
+                <img src="https://dummyimage.com/300x400" alt="Team Member" class="pb-5 ">
                 <p class="text-2xl">Name</p>
                 <p class="text-lg">Role</p>
               </div>
@@ -225,7 +223,59 @@
         </div>
       </div>
     </div>
-  </section>
+  </section>  
+
+   <!-- Team Section -->
+   <section id="team" class="scroll-mt-16">
+    <div class="bg-gray w-full">
+      <!-- Heading Text-->
+      <div class="pt-6 pl-10">
+        <h1 class="font-bold text-3xl md:text-6xl space-grotesk">Team</h1>
+        <p class="railway text-xl">Meet the team that makes it all happen</p>
+      </div>
+        
+      <!-- Team Horizontal Scroller -->
+      <div class="flex justify-center mt-6">
+        <div class="flex bg-gray w-full h-1/2 overflow-x-scroll snap-x flex-nowrap">
+          <!-- Card blau round edges -->
+          <div class="shrink-0 flex-col bg-blue-300 p-6 m-6 rounded-md team_card">
+            <div class="text-white">
+              <img src="https://dummyimage.com/300x400" alt="Team Member" class="pb-5">
+              <p class="text-2xl">Name</p>
+              <p class="text-lg">Role</p> 
+            </div>
+          </div>
+
+          <!-- Card lila round edges -->
+          <div class="shrink-0 flex-col bg-light-blue p-6 m-6 rounded-md team_card">
+            <div class="text-white">
+              <img src="https://dummyimage.com/300x400" alt="Team Member" class="pb-5">
+              <p class="text-2xl">Name</p>
+              <p class="text-lg">Role</p>
+            </div>
+          </div>
+
+          <!-- Card lila -->
+          <div class="shrink-0 flex-col bg-light-blue p-6 m-6 team_card">
+            <div class="text-white">
+              <img src="https://dummyimage.com/300x400" alt="Team Member" class="pb-5">
+              <p class="text-2xl">Name</p>
+              <p class="text-lg">Role</p>
+            </div>
+          </div>
+
+          <!-- Card no bg -->
+          <div class="shrink-0 flex-col p-6 m-6 rounded-md team_card">
+            <div class="text-black">
+              <img src="https://dummyimage.com/300x400" alt="Team Member" class="pb-5 ">
+              <p class="text-2xl">Name</p>
+              <p class="text-lg">Role</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Learn More -->
 <section id="learnmore" class="scroll-mt-16">
@@ -249,24 +299,22 @@
 
       <!-- Card -->
       <div class="p-4 rounded-xl news_card">
-        <img src="https://dummyimage.com/500x300" alt="Team Member" class="w-full aspect-video object-cover rounded-md">
+        <img src="https://dummyimage.com/500x300" alt="Team Member" class="w-full aspect-video object-cover img-shadow-lg">
         <p class="text-2xl mt-4">Name</p>
-        <p class="text-lg">Text</p>
+        <p class="text-lg">Text eines zukünftigen Cosmotaics Artikels</p>
       </div>
 
       <!-- Card -->
       <div class="p-4 rounded-xl news_card">
-        <img src="https://dummyimage.com/500x300" alt="Team Member" class="w-full aspect-video object-cover rounded-md">
+        <img src="https://dummyimage.com/500x300" alt="Team Member" class="w-full aspect-video object-cover img-shadow-lg">
         <p class="text-2xl mt-4">Name</p>
-        <p class="text-lg">Role</p>
+        <p class="text-lg">Text eines zukünftigen Cosmotaics Artikels</p>
       </div>
 
     </div>
 
   </div>
 </section>
-
-
 
     <!-- Contact-->
     <section id="contact" class="scroll-mt-16">
@@ -278,7 +326,7 @@
           <div class="bg-gray w-full md:w-1/2 p-10" id="app">
             <form action=""  @submit.prevent="submitForm">
               <div class="mb-4">
-                <label for="name" class="block text-sm font-medium mb-2">Name</label>
+                <label for="name" class="blocktext-sm font-medium mb-2">Name</label>
                 <input type="text" name="name" id="name" class="w-full p-2 rounded-md bg-blue-300 text-white" v-model="name">
               </div>
               <div class="mb-4">
@@ -299,10 +347,6 @@
       </div>
     </section>
 
-
-     
-    
-
   <!-- Footer -->
     <footer class="relative bg-blue h-16 text-white flex justify-center items-center overflow-hidden">
       <div class="absolute inset-0 bg-footer filter "></div>
@@ -310,14 +354,3 @@
     </footer>
   </body>
 </html>
-
-<style>
-/* Fonts */
-.space-grotesk {
-  font-family: 'Space Grotesk', sans-serif;
-}
-
-.railway {
-  font-family: 'Raleway', sans-serif;
-}
-</style>

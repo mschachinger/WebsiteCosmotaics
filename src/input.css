@@ -38,3 +38,12 @@
 .img-shadow-xl {
   box-shadow: 18px 18px blue;
 }
+
+/* Fonts */
+.space-grotesk {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.railway {
+  font-family: 'Raleway', sans-serif;
+}
