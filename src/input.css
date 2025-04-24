@@ -1,6 +1,7 @@
 @import 'tailwindcss';
 @config '../tailwind.config.js';
 
+
 @theme {
   --color-blue: #2226f1;
 
@@ -29,6 +30,7 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
+  
 }
 
 .img-shadow-lg {
