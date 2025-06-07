@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link href="../src/output.css" rel="stylesheet">
+      <link rel="icon" type="image/png" href="../src/img/Cosmo_Logo_v1.svg">
+      <script type="module" src="pages.js"></script>
+
+      <!-- Space Grotesk -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+      <!-- Raleway -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+
+      <!-- GSAP -->
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+
+  </head>
+  <body>
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full bg-blue z-40">
+    <div class="mx-auto max-w-8xl px-2 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <a href="#home" class="p-4"><img src="../src/img/Cosmo_Logo_v1.svg" class="w-8"></a>
+
+        <!-- Navigation items (Desktop) -->
+        <div class="hidden sm:flex sm:space-x-4">
+          <a href="#video" class="rounded-md bg-blue-600 px-3 py-2 text-sm font-medium text-white">Dashboard</a>
+          <a href="#team" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-blue-700 hover:text-white">The Idea</a>
+          <a href="#idea" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-blue-700 hover:text-white">The Team</a>
+          <a href="#contact" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-blue-700 hover:text-white">Contact</a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <div class="sm:hidden mr-6">
+          <button id="menu-button" type="button"
+            class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+
+            <!-- Opened Menu SVG -->
+            <svg id="menu-open-icon" class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <!-- Close Menu SVG -->
+            <svg id="menu-close-icon" class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="hidden sm:hidden bg-blue w-full" id="mobile-menu">
+      <div class="space-y-1 px-2 pb-3 pt-2">
+        <a href="#video" class="block rounded-md px-3 py-2 text-base font-medium text-white">Dashboard</a>
+        <a href="#team" class="block rounded-md px-3 py-2 text-base font-medium text-white">The Idea</a>
+        <a href="#idea" class="block rounded-md px-3 py-2 text-base font-medium text-white">The Team</a>
+        <a href="#contact" class="block rounded-md px-3 py-2 text-base font-medium text-white">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+    <section id="" class="scroll-mt-16 mt-16">      
+
+      <div class="-full h-full">
+        <div class="px-14 lg:px-64">
+          <h1 class="text-2xl md:text-6xl font-bold space-grotesk pt-5 pb-5 fade-section">Cosmotaics x WU Wien: A Bright Collaboration with the Next Generation of Innovators</h1>
+          <p class="pb-5 text-lg fade-section">We’re thrilled to announce our collaboration with WU Wien (Vienna University of Economics and Business) as part of the GATE program — a hands-on initiative that connects high-potential startups with top master’s students from the SIMC program.</p>
+          <img src="../src/img/blog_thumbnail_3.avif" alt="solar" class="pb-6 w-full fade-section">
+
+          <!-- Smaller Heading-->
+          <p class="font-semibold text-3xl pb-1 fade-section">Prototypenfertigstellung und bevorstehender Besuch</p>
+          <!-- Text -->
+          <p class="pb-5 text-lg fade-section">Since March 2025, Cosmotaics has been working closely with a brilliant team of SIMC students — <b>Lucy Munster, Alisia Blagermann, and Steven</b> — who are helping us shape our future through a structured, semester-long project. Their mission: to explore and evaluate new business opportunities, strengthen our commercialization strategy, and bring a fresh, analytical lens to our market assumptions. 
+            <b>SIMC</b>, short for Strategy, Innovation, and Management Control, is one of WU’s flagship programs. It brings together students who are passionate about bridging innovation with strategic execution — exactly the kind of thinking needed to push climate tech forward. These students bring not only business acumen but also creativity and a strong international outlook, making them ideal partners in our mission to make solar energy more sustainable. Already, their work is helping us refine how we position Cosmotaics in different markets, how we talk to potential partners, and how we validate the unique value of our technology — turning solar farms into water-positive ecosystems through dew harvesting and soiling prevention. 
+            This collaboration is more than just a university project. It’s a reminder of how diverse perspectives and interdisciplinary teamwork fuel real innovation. Having fresh minds challenge assumptions, test new ideas, and contribute from a completely different angle is a true asset — and we’re incredibly grateful for the partnership.
+          </p>
+
+          <p class="pb-5 text-lg">
+            And yes, we kicked things off with a fun start: during our initial team-building session, <b>we proudly took first place in the Marshmallow Challenge!</b> A simple exercise, but one that reminded us all of the power of trust, iteration, and shared purpose. 
+            As we continue this journey together through July, we’re excited to learn, grow, and build something meaningful alongside our WU partners. 
+            Here’s to collaboration, curiosity, and creating a brighter (and cleaner) future — together.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative bg-blue h-16 text-white flex justify-center items-center overflow-hidden">
+      <div class="absolute inset-0 bg-footer filter "></div>
+      <p class="relative z-10">© 2024 Cosmotaics</p>
+    </footer>
+  </body>
+
+</html>
+
+<style>
+/* Fonts */
+.space-grotesk {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.railway {
+  font-family: 'Raleway', sans-serif;
+}
+</style>
